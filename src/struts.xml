@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC   
+     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"   
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+     
+     
+<struts>
+    <package name="liu" extends="struts-default">
+        <global-results>
+            <result name="succeed">/common/succeed.jsp</result>
+            <result name="successAdd">/common/add_success.jsp</result>
+            <result name="successDel">/common/del_success.jsp</result>
+            <result name="successUpdate">/common/update_success.jsp</result>
+            <result name="msg">/common/msg.jsp</result>
+        </global-results>
+        
+        <action name="upload" class="com.util.upload" method="upload">
+             <result name="success">/upload/upload_re.jsp</result>
+        </action>
+        
+        
+        <action name="adminAdd" class="adminAction" method="adminAdd">
+        </action>
+        <action name="adminDel" class="adminAction" method="adminDel">
+        </action>
+        <action name="adminManage" class="adminAction" method="adminManage">
+            <result name="success">/admin/index/adminManage.jsp</result>
+        </action>
+
+        <action name="userAdd" class="userAction" method="userAdd">
+        </action>
+        <action name="userDel" class="userAction" method="userDel">
+        </action>
+        <action name="userMana" class="userAction" method="userMana">
+             <result name="success">/admin/user/userMana.jsp</result>
+        </action>
+        <action name="userEditPre" class="userAction" method="userEditPre">
+             <result name="success">/admin/user/userEditPre.jsp</result>
+        </action>
+        <action name="userEdit" class="userAction" method="userEdit">
+        </action>
+        <action name="userSearch" class="userAction" method="userSearch">
+             <result name="success">/admin/user/userMana.jsp</result>
+        </action>
+        <action name="userLogout" class="userAction" method="userLogout">
+             <result name="success">/qiantai/index.html</result>
+        </action>
+        
+        
+        <action name="tongxunluMy" class="tongxunluAction" method="tongxunluMy">
+             <result name="success">/auser/tongxunlu/tongxunluMy.jsp</result>
+        </action>
+        <action name="tongxunluAdd" class="tongxunluAction" method="tongxunluAdd">
+        </action>
+        <action name="tongxunluDel" class="tongxunluAction" method="tongxunluDel">
+        </action>
+        <action name="tongxunluSelect" class="tongxunluAction" method="tongxunluSelect">
+             <result name="success">/auser/tongxunlu/tongxunluSelect.jsp</result>
+        </action>
+        
+        
+        
+        <action name="emailAdd" class="emailAction" method="emailAdd">
+        </action>
+        <action name="emailAdd_caogaoxiang" class="emailAction" method="emailAdd_caogaoxiang">
+        </action>
+        
+        <action name="fajianxiang_me" class="emailAction" method="fajianxiang_me">
+             <result name="success">/auser/fajianxiang/fajianxiang_me.jsp</result>
+        </action>
+        <action name="fajianxiang_me_search" class="emailAction" method="fajianxiang_me_search">
+             <result name="success">/auser/fajianxiang/fajianxiang_me.jsp</result>
+        </action>
+        <action name="fajianxiangDetail_me" class="emailAction" method="fajianxiangDetail_me">
+             <result name="success">/auser/fajianxiang/fajianxiangDetail_me.jsp</result>
+        </action>
+        <action name="fajianxiangDel_me" class="emailAction" method="fajianxiangDel_me">
+        </action>
+        
+        <action name="shoujianxiang_me" class="emailAction" method="shoujianxiang_me">
+             <result name="success">/auser/shoujianxiang/shoujianxiang_me.jsp</result>
+        </action>
+        <action name="shoujianxiang_me_search" class="emailAction" method="shoujianxiang_me_search">
+             <result name="success">/auser/shoujianxiang/shoujianxiang_me.jsp</result>
+        </action>
+        <action name="shoujianxiangDetail_me" class="emailAction" method="shoujianxiangDetail_me">
+             <result name="success">/auser/shoujianxiang/shoujianxiangDetail_me.jsp</result>
+        </action>
+        <action name="shoujianxiangDel_me" class="emailAction" method="shoujianxiangDel_me">
+        </action>
+        
+        <action name="caogaoxiang_me" class="emailAction" method="caogaoxiang_me">
+             <result name="success">/auser/caogaoxiang/caogaoxiang_me.jsp</result>
+        </action>
+        <action name="caogaoxiangDel_me" class="emailAction" method="caogaoxiangDel_me">
+        </action>
+        <action name="caogaoxiangFasong_me" class="emailAction" method="caogaoxiangFasong_me">
+        </action>
+        
+        <action name="lajixiang_me" class="emailAction" method="lajixiang_me">
+             <result name="success">/auser/lajixiang/lajixiang_me.jsp</result>
+        </action>
+        <action name="lajixiangDel_me" class="emailAction" method="lajixiangDel_me">
+        </action>
+        
+        <action name="emailAddQun" class="emailAction" method="emailAddQun">
+        </action>
+        <action name="emailAddByAdmin" class="emailAction" method="emailAddByAdmin">
+        </action>
+    </package>
+</struts>
